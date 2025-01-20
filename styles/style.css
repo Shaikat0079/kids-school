@@ -42,7 +42,8 @@ nav {
 }
 
 .nav-btn,
-.header-banner-btn {
+.header-banner-btn,
+.stories-btn {
   background-color: orange;
   border: none;
   padding: 10px 30px;
@@ -98,7 +99,7 @@ hr {
   font-size: 3rem;
 }
 
-.header-banner-btn {
+.header-banner-btn,.stories-btn {
   background-color: black;
 }
 
@@ -134,7 +135,9 @@ hr {
 .middle-card {
   background-image: linear-gradient(to bottom, #c4a1ff, #ded1ff, #ffffff);
 }
-.kinder-card > a,.elementary-card >a, .middle-card >a {
+.kinder-card > a,
+.elementary-card > a,
+.middle-card > a {
   color: #01acfd;
   text-decoration: none;
 }
@@ -157,6 +160,107 @@ hr {
   color: orange;
 }
 
+/* Stories Section */
+
+.our-stories {
+  background: #ffa500;
+  background-image: url("../assets/bg.png"); /* fallback */
+  background-image: url("../assets/bg.png"),
+    linear-gradient(to top, #ffa384,#ffe2ff, #ffffff);
+}
+
+.our-stories>h1{
+  text-align: center;
+}
+.stories{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.one-story{
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  position: relative;
+  
+}
+.btn-relative{
+  position: absolute;
+  top: calc(100% - 250px);
+  /* top: calc(100% - 38%); */
+  padding:10px;
+  margin: 0 40px;
+  background-color: #01acfd;
+  border-radius: 20px;
+  color: white;
+}
+.one-story > img{
+  width: 100%;
+  border-top-left-radius: 10px 10px;
+  border-top-right-radius: 10px 10px;
+}
+
+.one-story-description{
+  background-color: white;
+  padding: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.four-stories{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  padding: 20px 0;
+  gap: 20px;
+  width: 340px;
+}
+.small-stories{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.small-stories >img{
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.small-stories>h4{
+  background-color: white;
+  padding: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.small-stories > .btn-relative{
+  padding: 6px;
+  margin: 0 20px;
+  top: calc(100% - 136px);
+}
+
+#one{
+  background-color: gray;
+}
+
+#two{
+  background-color: orange;
+}
+
+#three{
+  background-color: purple;
+}
+
+#four{
+  background-color: black;
+}
+.stories-section-btn{
+  display:flex;
+  justify-content: center;
+}
 /* Making Responsive */
 
 @media screen and (max-width: 576px) {
@@ -191,12 +295,22 @@ hr {
     width: 100%;
   }
 
-  .cards{
+  .cards {
     flex-direction: column;
     gap: 20px;
   }
 
-  .curriculum-btns{
+  .curriculum-btns {
     display: none;
+  }
+
+  .one-story{
+    display: none;
+  }
+
+  .small-stories > .btn-relative{
+    padding: 5px;
+    margin: 0 10px;
+    top: calc(100% - 61%);
   }
 }
