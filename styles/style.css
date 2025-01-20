@@ -356,7 +356,7 @@ footer{
   .small-stories > .btn-relative{
     padding: 5px;
     margin: 0 10px;
-    top: calc(100% - 61%);
+    top: calc(100% - 68%);
   }
   .footer-last{
     flex-direction: column;
