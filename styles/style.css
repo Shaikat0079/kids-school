@@ -163,10 +163,11 @@ hr {
 /* Stories Section */
 
 .our-stories {
+
   background: #ffa500;
   background-image: url("../assets/bg.png"); /* fallback */
-  background-image: url("../assets/bg.png"),
-    linear-gradient(to top, #ffa384,#ffe2ff, #ffffff);
+  background-image: url("../assets/bg.png"),linear-gradient(to top, #ffa384,#ffe2ff, #ffffff);
+  padding: 20px 0;
 }
 
 .our-stories>h1{
@@ -260,6 +261,50 @@ hr {
 .stories-section-btn{
   display:flex;
   justify-content: center;
+  margin: 40px auto;
+}
+/* Footer Section */
+footer{
+  background-color: #01ACFD;
+  color: white;
+}
+
+.logo-text>img{
+  background-color: white;
+}
+.logo-text{
+  display: flex;
+  align-items: center;
+}
+.logo-text>h1{
+  font-size: 2rem;
+}
+.footer-last{
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+  align-items: stretch;
+
+}
+.links> ul{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 20px;
+  margin: 10px 0;
+}
+
+.social-links{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.logo-description{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 /* Making Responsive */
 
@@ -312,5 +357,14 @@ hr {
     padding: 5px;
     margin: 0 10px;
     top: calc(100% - 61%);
+  }
+  .footer-last{
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 20px;
+    /* margin: 20px auto; */
+  }
+  .logo-description{
+    width: 80%;
   }
 }
