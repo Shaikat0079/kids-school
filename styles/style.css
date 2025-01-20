@@ -72,7 +72,8 @@ nav {
 }
 
 hr {
-  color: orange;
+  /* color: orange; */
+  border: 1px solid orange;
   opacity: 0.5;
   margin: 10px 0;
   display: none;
