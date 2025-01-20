@@ -308,7 +308,7 @@ footer{
 }
 /* Making Responsive */
 
-@media screen and (max-width: 576px) {
+@media screen and (min-width:320px) and (max-width: 400px) {
   .colored-links {
     display: none;
   }
@@ -368,3 +368,67 @@ footer{
     width: 80%;
   }
 }
+
+@media screen and (min-width:401px) and (max-width:526px){
+  .colored-links {
+    display: none;
+  }
+  .icon-name > h3 {
+    display: none;
+  }
+  .btn > .nav-btn {
+    display: none;
+  }
+  .btn > .fa-bars {
+    display: block;
+  }
+  hr {
+    display: block;
+  }
+
+  .header-banner {
+    flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .header-description {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .header-banner > img {
+    width: 100%;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .curriculum-btns {
+    display: none;
+  }
+
+  .one-story{
+    display: none;
+  }
+
+  .small-stories > .btn-relative{
+    padding: 5px;
+    margin: 0 10px;
+    top: calc(100% - 61%);
+  }
+  .footer-last{
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 20px;
+    /* margin: 20px auto; */
+  }
+  .logo-description{
+    width: 80%;
+  }
+  
+}
+
+
