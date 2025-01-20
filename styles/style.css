@@ -41,7 +41,7 @@ nav {
   gap: 20px;
 }
 
-.nav-btn {
+.nav-btn,.header-banner-btn {
   background-color: orange;
   border: none;
   padding: 10px 30px;
@@ -56,7 +56,7 @@ nav {
 }
 
 #Blue {
-  color: skyblue;
+  color: #01ACFD;
 }
 
 #Aqua {
@@ -78,6 +78,28 @@ hr {
   display: none;
 }
 
+.header-banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-description{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.header-description h1{
+    font-size: 3rem;
+}
+
+.header-banner-btn{
+    background-color: black;
+}
+
 /* Making Responsive */
 
 @media screen and (max-width: 576px) {
@@ -95,5 +117,20 @@ hr {
   }
   hr {
     display: block;
+  }
+
+  .header-banner{
+    flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .header-description{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .header-banner > img{
+    width: 100%;
   }
 }
